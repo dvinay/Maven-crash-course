@@ -31,3 +31,42 @@ mvn install
 
 8) Maven plugin is a collection of one or more goals
 e.g: install plugin, it run the compile, test, package goals 
+
+9) How to add maven build plugin to take java1.8 version
+
+maven defaultly take, JDK 1.5 version
+go to pom.xml and add the following build plugin to update the project to take jdk version 1.8
+
+<build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.2</version>
+			<configuration>
+				<source>1.8</source>
+				<target>1.8</target>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>
+
+10) How to create a maven project in eclipse
+create a new project -> select Maven project for to create a maven 
+and provide the coordinate values
+
+11) How to skip test in maven project using command prompt
+mvn install -DskipTests
+
+12) How to skip test in maven project using eclipse
+select project -> run as -> run configuration
+click maven build -> click +
+give configuration -> 
+	build name
+	browser folder as current project
+	goal as install
+
+	click run
+
+
+	goal as install
