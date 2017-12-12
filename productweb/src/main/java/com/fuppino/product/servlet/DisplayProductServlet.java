@@ -23,11 +23,11 @@ public class DisplayProductServlet extends HttpServlet {
 		Product product = productBO.findProduct(Integer.parseInt(request.getParameter("id")));
 		
 		PrintWriter out = response.getWriter();
-		out.print("product details");
-		out.print("product ID: "+product.getId());
-		out.print("product Name: "+product.getName());
-		out.print("product Description: "+product.getDescription());
-		out.print("product price: "+product.getPrice());
+		out.println("product details");
+		out.println("product ID: "+product.getId());
+		out.println("product Name: "+product.getName());
+		out.println("product Description: "+product.getDescription());
+		out.println("product price: "+product.getPrice());
 	}
 
 }

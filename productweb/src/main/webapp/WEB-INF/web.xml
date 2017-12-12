@@ -6,7 +6,7 @@
   <display-name>Archetype Created Web Application</display-name>
   
   <context-param>
-  	<param-name>ContextConfiguration</param-name>
+  	<param-name>contextConfigLocation</param-name>
   	<param-value>classpath:/beans.xml</param-value>
   </context-param>
   <listener>

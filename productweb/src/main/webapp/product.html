@@ -5,12 +5,25 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form method="post" action="/CreateProductServlet">
-		<input name="id" type="number">
-		<input name="name" type="text">
-		<input name="description" type="text">
-		<input name="price" type="number">
-		<input type="submit" name="submit">
+	<form method="post" action="CreateProductServlet">
+		<h3>Enter Product Details</h3>
+		<table>
+		<tr>
+		<td> Product Id : </td> <td> <input name="id" type="number"> </td>
+		</tr>
+		<tr>
+		<td> Product Name : </td> <td> <input name="name" type="text"> </td>
+		</tr>
+		<tr>
+		<td> Product Description : </td> <td> <input name="description" type="text"> </td>
+		</tr>
+		<tr>
+		<td> Product Price : </td> <td> <input name="price" type="number"> </td>
+		</tr>
+		<tr>
+			<input type="submit" name="submit">
+		</tr>
+		</table>
 	</form>
 </body>
 </html>
