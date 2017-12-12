@@ -68,5 +68,14 @@ give configuration ->
 
 	click run
 
+13) How to configure other libraries into maven project
+go to pom.xml
+add the other libraries dependecy tag
+e.g for spring:
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-context</artifactId>
+		<version>4.3.3.RELEASE</version>
+	</dependency>
 
-	goal as install
+14) 
