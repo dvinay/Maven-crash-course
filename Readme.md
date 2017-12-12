@@ -166,4 +166,15 @@ it's like a one container contains multiple sub-modules/sub-projects
 	2) delete the project form eclipse(don't select delete from disk)
 	3) import the parent project. It will automatically loads all submodules
 	4) select parent project and compile the complete module
-	
+
+
+21) Maven scope is a visibility of plugins in life cycle
+	1) compile - during project build, it's a default scope
+	2) provided - test and run, it won't exist in final archive file
+		e.g: servlet-api dependency
+	3) runtime - only for running the tests, not available for compilation
+	4) test - only to compile the tests, run the tests
+		e.g: junit
+	5) system - the dependency available in the project.
+		we have to provide path for lib, related to project sub directory ${basedir}\war\WEB-INF\lib\extDependecy.jar
+	6) import - used in pom based project, not for jar or war
