@@ -4,6 +4,15 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  
+  <context-param>
+  	<param-name>ContextConfiguration</param-name>
+  	<param-value>classpath:/beans.xml</param-value>
+  </context-param>
+  <listener>
+  	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  
   <servlet>
   	<servlet-name>CreateProductServlet</servlet-name>
   	<display-name>CreateProductServlet</display-name>
