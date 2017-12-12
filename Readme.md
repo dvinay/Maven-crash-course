@@ -85,4 +85,28 @@ e.g for servlet:
     <scope>provided</scope>
 </dependency>
 
-14) 
+14) by using maven, you can create multi module project
+it's like a one container contains multiple sub-modules/sub-projects
+
+15) while creating multi module project
+	create a pom.xml in the root folder 
+	give a artifactId
+	change packaging type as pom
+	remove any dependecies or build
+	define modules
+	e.g: 
+		<modules>
+			<module>productservice</module>
+			<module>productweb</module>
+		</modules>
+
+16) How to create multi module project in eclipse
+	1) create a maven project
+	2) select create a simple project(skip archietype selection) and press next
+	3) give parent project group id
+	4) give parent project artifact id
+	5) select version 
+	6) select packaging type as pom
+	7) select create
+	8) go to parent project pom and add modules
+	
