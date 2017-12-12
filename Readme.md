@@ -153,3 +153,17 @@ it's like a one container contains multiple sub-modules/sub-projects
 	go to parent project folder which contains pom.xml type as pom.
 	run $mvn install command
 	
+19) How the project web and project service works
+	1) project service is a dependency project for project web
+	2) when we run the project service, spring context loads the beans from the sevice bean file
+	3) the beans are available in the spring context.
+	4) run the project in tomcat
+	5) load http://localhost:8080/productweb/product.html
+	6) enter the information and press submit
+
+20) How to compile and build the complete multi module project at a time
+	1) move all the child modules to inside the parent module
+	2) delete the project form eclipse(don't select delete from disk)
+	3) import the parent project. It will automatically loads all submodules
+	4) select parent project and compile the complete module
+	
