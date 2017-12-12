@@ -77,5 +77,12 @@ e.g for spring:
 		<artifactId>spring-context</artifactId>
 		<version>4.3.3.RELEASE</version>
 	</dependency>
+e.g for servlet:
+<dependency>
+    <groupId>org.apache.geronimo.specs</groupId>
+    <artifactId>geronimo-servlet_3.0_spec</artifactId>
+    <version>1.0</version>
+    <scope>provided</scope>
+</dependency>
 
 14) 
