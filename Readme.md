@@ -109,4 +109,43 @@ it's like a one container contains multiple sub-modules/sub-projects
 	6) select packaging type as pom
 	7) select create
 	8) go to parent project pom and add modules
+
+	e.g: //the final pom.xml file will be
+	<groupId>com.fuppino.product</groupId>
+  	<artifactId>productparent</artifactId>
+  	<version>1.0</version>
+  	<packaging>pom</packaging>
+  
+  	<modules>
+  		<module>productservices</module>
+  		<module>productweb</module>
+  	</modules>
+
+17-A) In child projects add parent tag
+	1) create parent project
+	2) add parent groupid,artifactid and parent pom version
+	3) add child artifactid and packaging
+
+	e.g: //the final pom.xml file after adding the parent project tag to productservice
+	<parent>
+		<groupId>com.fuppino.product</groupId>
+		<artifactId>productparent</artifactId>
+		<version>1.0</version>
+	</parent>
 	
+	<artifactId>productservices</artifactId>
+	<packaging>jar</packaging>
+
+17-B) for the second project add parent tag
+	//do the same steps as 17-A.
+
+	e.g: //the final pom.xml file after adding the parent project tag to productweb
+	<parent>
+		<groupId>com.fuppino.product</groupId>
+		<artifactId>productparent</artifactId>
+		<version>1.0</version>
+	</parent>
+	<artifactId>productweb</artifactId>
+	<packaging>war</packaging>
+	<name>productweb Maven Webapp</name>
+
