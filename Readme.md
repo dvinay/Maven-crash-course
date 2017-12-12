@@ -149,3 +149,7 @@ it's like a one container contains multiple sub-modules/sub-projects
 	<packaging>war</packaging>
 	<name>productweb Maven Webapp</name>
 
+18) to build multi module projects, in command line
+	go to parent project folder which contains pom.xml type as pom.
+	run $mvn install command
+	

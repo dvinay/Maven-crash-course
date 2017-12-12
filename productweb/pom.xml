@@ -6,7 +6,6 @@
 		<artifactId>productparent</artifactId>
 		<version>1.0</version>
 	</parent>
-	
 	<artifactId>productweb</artifactId>
 	<packaging>war</packaging>
 	<name>productweb Maven Webapp</name>
@@ -23,6 +22,16 @@
 			<artifactId>geronimo-servlet_3.0_spec</artifactId>
 			<version>1.0</version>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.fuppino.product</groupId>
+			<artifactId>productservices</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>4.3.3.RELEASE</version>
 		</dependency>
 	</dependencies>
 	<build>
