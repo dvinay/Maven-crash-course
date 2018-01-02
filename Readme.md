@@ -101,10 +101,18 @@ it's like a one container contains multiple sub-modules/sub-projects
 	remove any dependecies or build
 	define modules
 ```XML
-<modules>
-	<module>productservice</module>
-	<module>productweb</module>
-</modules>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.fuppino.product</groupId>
+  <artifactId>productparent</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+  
+  <modules>
+  	<module>productservices</module>
+  	<module>productweb</module>
+  </modules>
+</project>
 ```
 16) How to create multi module project in eclipse
 	1) create a maven project
