@@ -13,8 +13,7 @@ mvn archetype:generate -DgroupId=com.fuppino -DartifactId=hellomaven -Darchetype
 (or)
 
 mvn archetype:generate
-select 1095 for mvn archetype:generate
-
+- select 1095 for mvn archetype:generate
 - it will ask archetype and grouid etc information
 - it creates a simple application structure and a sample helloworld java file with name App.java
 
@@ -30,7 +29,7 @@ mvn install
 (or)
 7) java -cp target/hellomaven-1.0-SNAPSHOT.jar com.fuppino.App
 
-8) Maven plugin is a collection of one or more goals
+8) Maven plugin is a collection of one or more goals, goal can be a specific task. We can refer to plugin and goal like plugInId:goalId
 e.g: install plugin, it run the compile, test, package goals 
 
 9) How to add maven build plugin to take java1.8 version
@@ -60,6 +59,7 @@ and provide the coordinate values
 
 11) How to skip test in maven project using command prompt
 mvn install -DskipTests
+Note: to generate test cases for a class, select the class and right click and select new and select test cases.
 
 12) How to skip test in maven project using eclipse
 
